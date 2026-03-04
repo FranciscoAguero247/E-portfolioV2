@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-green: #00ff41;
+  --dark-void: #05080a;
+  --metallic-silver: #8e9294;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-void);
+  color: var(--terminal-green);
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden; 
+  overflow-y: auto; 
+}
+
+img{
+    opacity: 0.8;
+    filter: brightness(1.2) contrast(1.1);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* THE GLITCH ANIMATION */
+@keyframes glitch {
+  0% { clip-path: inset(80% 0 1% 0); transform: translate(-5px, 5px); }
+  20% { clip-path: inset(20% 0 50% 0); transform: translate(5px, -5px); }
+  40% { clip-path: inset(50% 0 30% 0); transform: translate(-5px, 5px); }
+  60% { clip-path: inset(10% 0 70% 0); transform: translate(5px, -5px); }
+  80% { clip-path: inset(40% 0 10% 0); transform: translate(-5px, 5px); }
+  100% { clip-path: inset(80% 0 1% 0); transform: translate(5px, -5px); }
+}
+
+.glitch-hover:hover {
+  animation: glitch 0.3s infinite;
+  filter: sepia(100%) hue-rotate(90deg) saturate(300%) brightness(1.2);
+  border-color: #ffffff; /* Turns white during glitch for high contrast */
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+}
+
+/* SUBTLE SCANLINE JITTER */
+.img-container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  animation: flicker 0.1s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.1; }
+  100% { opacity: 0.2; }
+}
+
+.scanline-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.2) 50%
+  ),
+  linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.02),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.02)
+  );
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+
+.glow-text {
+  text-shadow: 0 0 5px var(--terminal-green), 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.log-item:hover {
+  background: rgba(0, 255, 65, 0.05);
+  box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--terminal-green);
+  animation: typing 1s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+.system-footer {
+  background: linear-gradient(180deg, rgba(5, 8, 10, 0.9) 0%, rgba(10, 15, 20, 1) 100%);
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--terminal-green); }
+}
+
+@media (max-width: 640px) {
+  body {
+    line-height: 1.4; 
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 3px var(--terminal-green); 
+  }
+}
