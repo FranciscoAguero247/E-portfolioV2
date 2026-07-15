@@ -13,24 +13,20 @@ const ServiceRecord = ({ onClose }) => {
     >
       <div className="max-w-4xl mx-auto w-full pt-10 pb-20">
         
-        {/* Dynamic Header */}
         <div className="border-b-2 border-[#00ff41] pb-4 mb-8">
           <h2 className="text-4xl md:text-6xl uppercase tracking-tighter glow-text">Service_Record</h2>
           <div className="flex justify-between text-[#8e9294] text-[10px] mt-2">
             <span>FILE_REF: FRN-247-ALPHA</span>
-            {/* Populating name from data file */}
             <span>OFFICER: {SYSTEM_CREDENTIALS.name.toUpperCase()}</span>
           </div>
         </div>
 
-        {/* Skill Matrix rendered from portfolioDta */}
         <div className="mb-10 w-full max-w-2xl mx-auto">
           <h3 className="text-[#00ff41] text-xs mb-6 tracking-[0.3em] uppercase underline">Tactical_Skill_Matrix</h3>
           <div className="space-y-4 md:space-y-0 md:border md:border-[#8e9294]/20">
             {SKILL_MATRIX.map((skill, index) => (
               <div key={index} className="border border-[#00ff41]/40 p-4 md:grid md:grid-cols-3 md:items-center bg-black/40">
                 <span className="text-[#8e9294] text-[10px] uppercase">{skill.category}</span>
-                {/* Joining items to match your previous comma-separated stack */}
                 <span className="text-white text-sm">{skill.items.join(', ')}</span>
                 <span className="text-[#00ff41] text-xs md:text-right font-mono">STABLE</span>
               </div>
@@ -43,7 +39,6 @@ const ServiceRecord = ({ onClose }) => {
           <div className="space-y-6">
             <h3 className="text-[#00ff41] text-sm tracking-widest uppercase underline">Contact_Protocols</h3>
             <div className="flex flex-col gap-3">
-              {/* Mapping dynamically using credentials object */}
               <motion.a href={SYSTEM_CREDENTIALS.socials.linkedin} target="_blank" rel="noreferrer" whileHover={{ x: 5, color: "#fff" }} className="group border-l-2 border-[#8e9294]/20 pl-4 hover:border-[#00ff41] transition-colors flex flex-col">
                 <span className="text-[#8e9294] text-[10px]">LINKEDIN:</span>
                 <span className="text-sm font-bold tracking-tight">/in/francisco-aguero</span>

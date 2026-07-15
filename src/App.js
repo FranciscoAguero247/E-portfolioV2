@@ -5,13 +5,7 @@ import MissionControl from './components/MissionControl';
 import ServiceRecord from './components/ServiceRecord';
 import LogDetail from './components/LogDetail';
 import SystemFooter from './components/SystemFooter';
-
-const MISSION_LOGS = [
-  { id: '01', title: 'OP: METRO-INTEL', desc: 'Real-time meteorological surveillance.', link: 'https://api-site-zcwc.onrender.com/', github: "https://github.com/FranciscoAguero247/Weather-App", img: '/logs/weather-preview.png' },
-  { id: '02', title: 'OP: VISUAL-RECON', desc: 'React-driven cinematic data retrieval.', link: 'https://movie-motion-g-project-react.vercel.app/', github:"https://github.com/FranciscoAguero247/Movie-Motion-G-Project-React", img: '/logs/movie-motion-G-preview.png' },
-  { id: '03', title: 'OP: ARCHIVE-CORE', desc: 'Relational database management system.', link: 'https://book-note-record.onrender.com/', github: "https://github.com/FranciscoAguero247/Book-note-record", img: '/logs/book-note-preview.png' },
-  { id: '04', title: 'OP: COMMS-RELAY', desc: 'Full-stack information dissemination.', link: 'https://blog-web-application-delta.vercel.app/', github: "https://github.com/FranciscoAguero247/Blog-Web-Application", img: '/logs/blog-preview.png' },
-];
+import { SERVICE_RECORDS } from './portfolioDta';
 
 function App() {
   const [hoveredLog, setHoveredLog] = useState(null);
@@ -40,7 +34,7 @@ function App() {
 
       {!isOverlayOpen && (
         <MissionControl 
-          logs={MISSION_LOGS} 
+          logs={SERVICE_RECORDS} 
           onHover={setHoveredLog} 
           hoveredLog={hoveredLog} 
           onSelect={setSelectedLog} 
