@@ -14,7 +14,7 @@ export const SYSTEM_CREDENTIALS = {
 export const SKILL_MATRIX = [
   { category: "Languages", items: ["JavaScript (ES6+)", "TypeScript", "C++", "HTML5/CSS3"] },
   { category: "Frameworks & Libraries", items: ["React", "Node.js", "Express", "Tailwind CSS"] },
-  { category: "Databases & Architecture", items: ["RESTful APIs", "GraphQL", "SQL", "Data Handling"] },
+  { category: "Databases & Architecture", items: ["RESTful APIs", "SQL", "Data Handling"] },
   { category: "Methodologies", items: ["Defensive Programming", "System Orchestration", "Git/CI-CD"] }
 ];
 
@@ -24,9 +24,9 @@ export const SERVICE_RECORDS = [
     title: "OP: E-COMMERCE CORE",
     description: "A highly scalable distributed microservices system handling concurrent transaction requests utilizing Node.js, Express, and Redis cache architectures.",
     tags: ["Node.js", "Express", "Redis", "Tailwind CSS"],
-    liveUrl: "https://github.com/FranciscoAguero247", 
-    githubUrl: "https://github.com/FranciscoAguero247",
-    img: "/logs/ecommerce-preview.png" // Fallback or placeholder path
+    liveUrl: "https://franciscoaguero247.github.io/E-Commerce/", 
+    githubUrl: "https://github.com/FranciscoAguero247/E-Commerce",
+    img: "/logs/ecommerce-preview.png"
   },
   {
     id: "02",
@@ -63,5 +63,50 @@ export const SERVICE_RECORDS = [
     liveUrl: "https://blog-web-application-delta.vercel.app/",
     githubUrl: "https://github.com/FranciscoAguero247/Blog-Web-Application",
     img: "/logs/blog-preview.png"
+  },
+  {
+    id: "06", 
+    title: "OP: ULTRAVERSE-RECON",
+    description: "An advanced, dynamic NFT Marketplace web application developed during the Frontend Simplified Advanced Virtual Internship. Engineered with complex React state management, dynamic loading skeletons, interactive countdown timers, and responsive CSS architectures.",
+    tags: ["React", "JavaScript", "Axios API", "CSS/Styled Components"], 
+    liveUrl: "https://francisco-internship-maug.vercel.app/",
+    githubUrl: "https://github.com/FranciscoAguero247/Francisco-Internship",
+    img: "/logs/ultraverse-preview.png" 
+  },
+  {
+    id: "07", 
+    title: "OP: SKINSTRIC-AI",
+    description: "An AI-driven skincare diagnostic application built during a partner-company simulation. Features real-time camera capture streams via device APIs, image analysis algorithms, dynamic questionnaire logic, and fluid component transitions.",
+    tags: ["React", "JavaScript", "Webcam API", "CSS Modules"], 
+    liveUrl: " https://fes-skinstric-internship.vercel.app/",
+    githubUrl: "https://github.com/FranciscoAguero247/FES-Skinstric-Internship",
+    img: "/logs/skinstric-preview.png"
+  },
+  {
+    id: "08", 
+    title: "OP: SUMMARIST-CORE",
+    description: "A subscription-based micro-learning book summary platform that delivers concise, high-impact key insights and audio breakdowns. Built with strict defensive UI architectures, an isolated authentication modal stacking system, and real-time document delivery.",
+    tags: ["Next.js", "React", "Firebase Auth", "Firestore NoSQL", "Vanilla CSS3"], 
+    liveUrl: "https://frontend-simplified-advance-virtual.vercel.app/", 
+    githubUrl: "https://github.com/FranciscoAguero247/Frontend-Simplified---Advance-Virtual-Internship-v2-",
+    img: "/logs/summarist-preview.png"
+  },
+  {
+    id: "09", 
+    title: "OP: CORE-FOUNDATION",
+    description: "A pixel-perfect, fully responsive multi-page web platform designed as the Frontend Simplified Foundation Capstone. Engineered using semantic HTML5, advanced CSS3 layout engines, and vanilla JavaScript to handle dynamic state rendering, product filtering, and fluid viewport scaling.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"], 
+    liveUrl: "https://franciscoaguero247.github.io/FES-Final-Project/", 
+    githubUrl: "https://github.com/FranciscoAguero247/FES-Final-Project",
+    img: "/logs/foundation-preview.png" 
+  },
+  {
+    id: "10", 
+    title: "OP: CULINARY-API (Recipe Telemetry)",
+    description: "A full-stack culinary database and recipe management application. Engineered with a robust RESTful API backend to handle structured ingredient schemas, CRUD operations, and a highly responsive user interface for interactive recipe curation.",
+    tags: ["React", "Node.js", "Express", "RESTful APIs", "Data Handling"], 
+    liveUrl: "https://culinary-api-frontend.onrender.com/", 
+    githubUrl: "https://github.com/FranciscoAguero247/culinary-api",
+    img: "/logs/culinary-preview.png" 
   }
 ];
