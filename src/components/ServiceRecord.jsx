@@ -1,7 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import TerminalContact from './TerminalContact';
 
 const ServiceRecord = ({ onClose }) => {
+  const [showComms, setShowComms] = useState(false);
+
   const skills = [
     { cat: "FRONTEND", stack: "React, HTML, Tailwind CSS, JavaScript, Framer Motion, EJS"},
     { cat: "BACKEND", stack: "Node.js, Express, PostgreSQL / SQL"},
@@ -10,10 +13,13 @@ const ServiceRecord = ({ onClose }) => {
 
   return (
     <motion.div 
-      initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      exit={{ opacity: 0 }}
       className="fixed inset-0 z-[100] bg-[#05080a] flex flex-col items-center p-6 md:p-20 overflow-y-auto"
     >
       <div className="max-w-4xl mx-auto w-full pt-10 pb-20">
+        
         <div className="border-b-2 border-[#00ff41] pb-4 mb-8">
           <h2 className="text-4xl md:text-6xl uppercase tracking-tighter glow-text">Service_Record</h2>
           <div className="flex justify-between text-[#8e9294] text-[10px] mt-2">
@@ -36,6 +42,7 @@ const ServiceRecord = ({ onClose }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
           <div className="space-y-6">
             <h3 className="text-[#00ff41] text-sm tracking-widest uppercase underline">Contact_Protocols</h3>
             <div className="flex flex-col gap-3">
@@ -44,27 +51,79 @@ const ServiceRecord = ({ onClose }) => {
                 { label: "GITHUB", value: "/franciscoaguero247", url: "https://github.com/franciscoaguero247" },
                 { label: "SIGNAL_SECURE", value: "DOWNLOAD_CLEAN_RESUME.PDF", url: "/Associate Software Developer-1.docx" }
               ].map((contact, idx) => (
-                <motion.a key={idx} href={contact.url} target="_blank" whileHover={{ x: 5, color: "#fff" }} className="group border-l-2 border-[#8e9294]/20 pl-4 hover:border-[#00ff41] transition-colors flex flex-col">
+                <motion.a 
+                  key={idx} 
+                  href={contact.url} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  whileHover={{ x: 5, color: "#fff" }} 
+                  className="group border-l-2 border-[#8e9294]/20 pl-4 hover:border-[#00ff41] transition-colors flex flex-col"
+                >
                   <span className="text-[#8e9294] text-[10px]">{contact.label}:</span>
                   <span className="text-sm font-bold tracking-tight">{contact.value}</span>
                 </motion.a>
               ))}
             </div>
+
+            {!showComms && (
+              <button 
+                onClick={() => setShowComms(true)}
+                className="mt-4 border border-[#00ff41] text-[#00ff41] hover:bg-[#00ff41]/10 px-6 py-2.5 text-xs font-bold tracking-widest uppercase transition-all duration-150 active:scale-95 flex items-center gap-2"
+              >
+                <span>&gt;&gt; OPEN_SECURE_TRANSMISSION</span>
+              </button>
+            )}
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-[#00ff41] text-sm tracking-widest uppercase underline">Core_Directives</h3>
-            <ul className="text-[#8e9294] list-disc list-inside space-y-1">
-              <li>Eliminate System Inefficiency.</li>
-              <li>Ensure UI Resilience.</li>
-              <li>Scale Architecture.</li>
-            </ul>
+            <AnimatePresence mode="wait">
+              {!showComms ? (
+                <motion.div
+                  key="directives"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="space-y-4"
+                >
+                  <h3 className="text-[#00ff41] text-sm tracking-widest uppercase underline">Core_Directives</h3>
+                  <ul className="text-[#8e9294] list-disc list-inside space-y-1">
+                    <li>Eliminate System Inefficiency.</li>
+                    <li>Ensure UI Resilience.</li>
+                    <li>Scale Architecture.</li>
+                  </ul>
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="terminal-contact"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className="relative space-y-4"
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="text-[10px] text-red-500 font-bold uppercase tracking-widest animate-pulse">[ SECURE CHANNEL ESTABLISHED ]</span>
+                    <button 
+                      onClick={() => setShowComms(false)}
+                      className="text-red-400 hover:text-red-300 text-xs tracking-wider"
+                    >
+                      [ DISCONNECT ]
+                    </button>
+                  </div>
+                  <TerminalContact />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
 
-        <button onClick={onClose} className="mt-12 border border-[#00ff41] px-10 py-3 hover:bg-[#00ff41] hover:text-black transition-all">
-          RETURN_TO_COLLECTION
-        </button>
+        <div className="mt-12 flex items-center justify-between border-t border-[#8e9294]/20 pt-6">
+          <button 
+            onClick={onClose} 
+            className="border border-[#00ff41] px-10 py-3 hover:bg-[#00ff41] hover:text-black transition-all"
+          >
+            RETURN_TO_COLLECTION
+          </button>
+        </div>
       </div>
     </motion.div>
   );
