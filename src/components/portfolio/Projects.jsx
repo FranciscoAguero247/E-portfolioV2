@@ -18,7 +18,7 @@ export default function Projects(){
               <span style={{fontSize:10,letterSpacing:'.14em',color:'#9dffb5',border:'1px solid rgba(53,255,106,.3)',padding:'3px 8px'}}>{op.tags && op.tags[0]}</span>
             </div>
             <div style={{fontSize:20,fontWeight:700,color:'#eafff0',letterSpacing:'.02em',marginBottom:6}}>{op.title}</div>
-            <div style={{fontSize:11.5,color:'#1fae44',letterSpacing:'.06em',marginBottom:16,wordBreak:'break-word'}}>{op.githubUrl}</div>
+            <div style={{fontSize:11.5,color:'#1fae44',letterSpacing:'.06em',marginBottom:16,wordBreak:'break-word'}}>{op?.alias}</div>
             <p style={{fontSize:13,lineHeight:1.75,color:'#7fe89a',minHeight:66}}>{op.description}</p>
             <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:16,paddingTop:16,borderTop:'1px solid rgba(53,255,106,.18)',fontSize:11,letterSpacing:'.12em'}}>
               <span style={{color:'#35ff6a'}}>STATUS: {op.tags ? 'ONLINE' : 'UNKNOWN'}</span>

@@ -48,6 +48,7 @@ export const SERVICE_RECORDS = [
   {
     id: "01",
     title: "OP: E-COMMERCE CORE",
+    alias: "E-Commerce App",
     description: "A highly scalable distributed microservices system handling concurrent transaction requests utilizing Node.js, Express, and Redis cache architectures.",
     tags: ["Node.js", "Express", "Redis", "Tailwind CSS"],
     liveUrl: "https://franciscoaguero247.github.io/E-Commerce/", 
@@ -56,7 +57,8 @@ export const SERVICE_RECORDS = [
   },
   {
     id: "02",
-    title: "OP: VISUAL-RECON (Movie Motion G-Project)",
+    title: "OP: VISUAL-RECON",
+    alias: "Movie Motion G-Project",
     description: "A highly interactive media tracking and cinematic data retrieval application leveraging React context states, modern layouts, and fluid transitions.",
     tags: ["React", "JavaScript", "Tailwind CSS", "API Integration"],
     liveUrl: "https://movie-motion-g-project-react.vercel.app/",
@@ -66,6 +68,7 @@ export const SERVICE_RECORDS = [
   {
     id: "03",
     title: "OP: METRO-INTEL",
+    alias: "Weather App",
     description: "Real-time meteorological surveillance and weather telemetry interface.",
     tags: ["JavaScript", "API Integration", "CSS3", "Data Handling"],
     liveUrl: "https://api-site-zcwc.onrender.com/",
@@ -75,6 +78,7 @@ export const SERVICE_RECORDS = [
   {
     id: "04",
     title: "OP: ARCHIVE-CORE",
+    alias: "Book Note Collection",
     description: "Relational database management system designed for indexing, referencing, and recording book annotations.",
     tags: ["SQL", "Node.js", "Express", "Data Handling"],
     liveUrl: "https://book-note-record.onrender.com/",
@@ -84,6 +88,7 @@ export const SERVICE_RECORDS = [
   {
     id: "05",
     title: "OP: COMMS-RELAY",
+    alias: "Blog Web Application",
     description: "Full-stack information dissemination hub and publishing engine built with clean MVC routing architecture.",
     tags: ["Node.js", "Express", "HTML5/CSS3", "JavaScript"],
     liveUrl: "https://blog-web-application-delta.vercel.app/",
@@ -93,6 +98,7 @@ export const SERVICE_RECORDS = [
   {
     id: "06", 
     title: "OP: ULTRAVERSE-RECON",
+    alias: "NFT Marketplace",
     description: "An advanced, dynamic NFT Marketplace web application developed during the Frontend Simplified Advanced Virtual Internship. Engineered with complex React state management, dynamic loading skeletons, interactive countdown timers, and responsive CSS architectures.",
     tags: ["React", "JavaScript", "Axios API", "CSS/Styled Components"], 
     liveUrl: "https://francisco-internship-maug.vercel.app/",
@@ -102,6 +108,7 @@ export const SERVICE_RECORDS = [
   {
     id: "07", 
     title: "OP: SKINSTRIC-AI",
+    alias: "SKINSTRIC AI",
     description: "An AI-driven skincare diagnostic application built during a partner-company simulation. Features real-time camera capture streams via device APIs, image analysis algorithms, dynamic questionnaire logic, and fluid component transitions.",
     tags: ["React", "JavaScript", "Webcam API", "CSS Modules"], 
     liveUrl: " https://fes-skinstric-internship.vercel.app/",
@@ -111,6 +118,7 @@ export const SERVICE_RECORDS = [
   {
     id: "08", 
     title: "OP: SUMMARIST-CORE",
+    alias: "Summarist",
     description: "A subscription-based micro-learning book summary platform that delivers concise, high-impact key insights and audio breakdowns. Built with strict defensive UI architectures, an isolated authentication modal stacking system, and real-time document delivery.",
     tags: ["Next.js", "React", "Firebase Auth", "Firestore NoSQL", "Vanilla CSS3"], 
     liveUrl: "https://frontend-simplified-advance-virtual.vercel.app/", 
@@ -120,6 +128,7 @@ export const SERVICE_RECORDS = [
   {
     id: "09", 
     title: "OP: CORE-FOUNDATION",
+    alias: "Treact site",
     description: "A pixel-perfect, fully responsive multi-page web platform designed as the Frontend Simplified Foundation Capstone. Engineered using semantic HTML5, advanced CSS3 layout engines, and vanilla JavaScript to handle dynamic state rendering, product filtering, and fluid viewport scaling.",
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"], 
     liveUrl: "https://franciscoaguero247.github.io/FES-Final-Project/", 
@@ -128,7 +137,8 @@ export const SERVICE_RECORDS = [
   },
   {
     id: "10", 
-    title: "OP: CULINARY-API (Recipe Telemetry)",
+    title: "OP: Recipe Telemetry ",
+    alias: "Culinary API",
     description: "A full-stack culinary database and recipe management application. Engineered with a robust RESTful API backend to handle structured ingredient schemas, CRUD operations, and a highly responsive user interface for interactive recipe curation.",
     tags: ["React", "Node.js", "Express", "RESTful APIs", "Data Handling"], 
     liveUrl: "https://culinary-api-frontend.onrender.com/", 
