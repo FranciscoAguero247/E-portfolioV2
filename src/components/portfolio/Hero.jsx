@@ -7,11 +7,11 @@ export default function Hero() {
       <div>
         <div style={{display:'flex',alignItems:'center',gap:14,fontSize:12,letterSpacing:'.24em',color:'#1fae44',marginBottom:26,flexWrap:'wrap'}}>
           <span>FILE_REF: FRN-247-ALPHA</span>
-          <span style={{color:'#0f5220'}}>//</span>
+          <span style={{color:'#0f5220'}}> { "//" } </span>
           <span style={{display:'inline-flex',alignItems:'center',gap:7,color:'#35ff6a'}}><span style={{width:8,height:8,background:'#35ff6a',borderRadius:'50%'}}></span>STATUS: ACTIVE_DEPLOYMENT</span>
         </div>
         <h1 style={{fontSize:'clamp(38px,7vw,88px)',fontWeight:800,lineHeight:.94,letterSpacing:'-.01em',color:'#eafff0',marginBottom:8}}>FRANCISCO<br/>AGUERO</h1>
-        <div style={{fontSize:'clamp(14px,2vw,19px)',letterSpacing:'.16em',color:'#35ff6a',margin:'18px 0 30px'}}>SOFTWARE DEVELOPER<span style={{color:'#0f5220'}}> // </span>FULL-STACK OPERATIVE</div>
+        <div style={{fontSize:'clamp(14px,2vw,19px)',letterSpacing:'.16em',color:'#35ff6a',margin:'18px 0 30px'}}>SOFTWARE DEVELOPER<span style={{color:'#0f5220'}}> { "//" } </span>FULL-STACK OPERATIVE</div>
         <p style={{maxWidth:560,fontSize:14.5,lineHeight:1.85,color:'#7fe89a',marginBottom:34}}>{SYSTEM_CREDENTIALS.bio}</p>
         <div style={{display:'flex',flexWrap:'wrap',gap:10,marginBottom:38}}>
           <span style={{border:'1px solid rgba(53,255,106,.28)',padding:'7px 12px',fontSize:11.5,letterSpacing:'.1em',color:'#9dffb5'}}>LOC: WEST_VALLEY_CITY_UT</span>

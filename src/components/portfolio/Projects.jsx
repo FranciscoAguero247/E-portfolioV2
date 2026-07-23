@@ -6,7 +6,8 @@ export default function Projects(){
     <section id="operations" style={{marginBottom:120}}>
       <div style={{display:'flex',alignItems:'baseline',gap:16,marginBottom:8}}>
         <h2 style={{fontSize:13,letterSpacing:'.28em',color:'#35ff6a'}}>ACTIVE_OPERATIONS</h2>
-        <span style={{fontSize:11,color:'#1fae44',letterSpacing:'.14em'}}>// SELECTED DEPLOYMENTS [{SERVICE_RECORDS.length}]</span>
+        <span style={{fontSize:11,color:'#1fae44',letterSpacing:'.14em'}}> { "//" } </span>
+        <span style={{fontSize:11,color:'#1fae44',letterSpacing:'.14em'}}>SELECTED DEPLOYMENTS [{SERVICE_RECORDS.length}]</span>
       </div>
       <div style={{height:2,background:'#35ff6a',transformOrigin:'left',boxShadow:'0 0 10px rgba(53,255,106,.5)',marginBottom:40}} />
       <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(340px,1fr))',gap:18}}>
