@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="440b31e6-4ebd-4c3f-8b8d-ed9f6a37476e"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("5016936f-5a10-43c1-9278-d6b0809e8d80") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("70713509-5735-450e-a689-19be00c330c4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1ac8d26e-4452-46df-93bc-581f89eff160") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("aabb27bb-e8ac-4044-9871-b30e2e8fc910") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("00a47402-60e5-4f00-a011-35a34609941d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("abca3d14-f7b6-42e4-b829-0b12f503359e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("5016936f-5a10-43c1-9278-d6b0809e8d80") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("70713509-5735-450e-a689-19be00c330c4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("1ac8d26e-4452-46df-93bc-581f89eff160") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("aabb27bb-e8ac-4044-9871-b30e2e8fc910") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("00a47402-60e5-4f00-a011-35a34609941d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("abca3d14-f7b6-42e4-b829-0b12f503359e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("5016936f-5a10-43c1-9278-d6b0809e8d80") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("70713509-5735-450e-a689-19be00c330c4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1ac8d26e-4452-46df-93bc-581f89eff160") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("aabb27bb-e8ac-4044-9871-b30e2e8fc910") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("00a47402-60e5-4f00-a011-35a34609941d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("abca3d14-f7b6-42e4-b829-0b12f503359e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("5016936f-5a10-43c1-9278-d6b0809e8d80") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("70713509-5735-450e-a689-19be00c330c4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("1ac8d26e-4452-46df-93bc-581f89eff160") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("aabb27bb-e8ac-4044-9871-b30e2e8fc910") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("00a47402-60e5-4f00-a011-35a34609941d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("abca3d14-f7b6-42e4-b829-0b12f503359e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    background:#030603;
+    color:#8bffa8;
+    font-family:'JetBrains Mono', ui-monospace, monospace;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection { background:#35ff6a; color:#020402; }
+  a { color:#35ff6a; text-decoration:none; }
+  a:hover { color:#c9ffd6; }
+  ::-webkit-scrollbar { width:10px; height:10px; }
+  ::-webkit-scrollbar-track { background:#050a06; }
+  ::-webkit-scrollbar-thumb { background:#1a5c2e; border:2px solid #050a06; }
+  ::-webkit-scrollbar-thumb:hover { background:#35ff6a; }
+  @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  @keyframes titleGlow {
+    0%,100% { text-shadow:0 0 8px rgba(53,255,106,.55),0 0 26px rgba(53,255,106,.35),0 0 60px rgba(53,255,106,.18); }
+    50% { text-shadow:0 0 12px rgba(53,255,106,.8),0 0 40px rgba(53,255,106,.5),0 0 90px rgba(53,255,106,.28); }
+  }
+  @keyframes flicker {
+    0%,100%{opacity:1} 92%{opacity:1} 93%{opacity:.4} 94%{opacity:1} 96%{opacity:.7} 97%{opacity:1}
+  }
+  @keyframes scanSweep { 0%{transform:translateY(-10vh)} 100%{transform:translateY(110vh)} }
+  @keyframes fillBar { from{transform:scaleX(0)} to{transform:scaleX(1)} }
+  @keyframes bitFlicker { 0%,100%{opacity:.25} 50%{opacity:1} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes drawLine { from{transform:scaleX(0)} to{transform:scaleX(1)} }
+  @keyframes dotPulse { 0%,100%{opacity:1;box-shadow:0 0 8px #35ff6a} 50%{opacity:.35;box-shadow:0 0 2px #35ff6a} }
+  @keyframes gridPan { from{background-position:0 0} to{background-position:0 44px} }
+  @keyframes bootCursor { 50%{opacity:0} }
+</style>
+</helmet>
+
+<div style="position:fixed;inset:0;z-index:50;pointer-events:none;background:linear-gradient(rgba(53,255,106,.035) 1px,transparent 1px);background-size:100% 3px;mix-blend-mode:screen;"></div>
+<div style="position:fixed;inset:0;z-index:51;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.65) 100%);"></div>
+<div style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;background-image:linear-gradient(rgba(53,255,106,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(53,255,106,.05) 1px,transparent 1px);background-size:44px 44px;animation:gridPan 8s linear infinite;"></div>
+<div style="position:fixed;left:0;right:0;top:0;height:120px;z-index:52;pointer-events:none;background:linear-gradient(180deg,rgba(53,255,106,.10),transparent);animation:scanSweep 7s linear infinite;"></div>
+
+<div ref="{{ bootRef }}" style="position:fixed;inset:0;z-index:100;background:#020402;display:flex;flex-direction:column;justify-content:center;padding:6vw;transition:opacity .6s ease;">
+  <div style="max-width:760px;">
+    <pre ref="{{ bootTextRef }}" style="font-family:'JetBrains Mono',monospace;font-size:15px;line-height:1.9;color:#35ff6a;white-space:pre-wrap;text-shadow:0 0 6px rgba(53,255,106,.5);"></pre>
+    <span style="display:inline-block;width:11px;height:20px;background:#35ff6a;vertical-align:-4px;animation:bootCursor 1s step-end infinite;box-shadow:0 0 10px #35ff6a;"></span>
+  </div>
+  <div style="position:absolute;bottom:5vw;left:6vw;font-size:11px;letter-spacing:.28em;color:#1f7a37;">PRESS ANY KEY TO SKIP // TERMINATOR_PROTOCOL v2.4.7</div>
+</div>
+
+<div style="position:fixed;top:20px;right:20px;z-index:40;display:flex;align-items:center;gap:12px;border:1px solid rgba(53,255,106,.4);background:rgba(3,10,5,.82);backdrop-filter:blur(3px);padding:9px 14px 9px 9px;box-shadow:0 0 24px rgba(53,255,106,.12);">
+  <div style="width:42px;height:42px;filter:grayscale(1) contrast(1.15) brightness(1.05);border:1px solid rgba(53,255,106,.5);overflow:hidden;flex:0 0 auto;">
+    <x-import component-from-global-scope="image-slot" from="8f696a08-c8fb-44b9-942f-09e01b8f83f7#/image-slot.js" id="id-badge-photo" shape="rect" placeholder="ID PHOTO" hint-size="42px,42px" style="width:42px;height:42px;"></x-import>
+  </div>
+  <div style="line-height:1.5;">
+    <div style="font-size:12px;color:#35ff6a;letter-spacing:.05em;">ID: FRANCISCO_A_247</div>
+    <div style="font-size:11px;font-weight:700;color:#cfffdb;letter-spacing:.14em;">SERVICE RECORD</div>
+  </div>
+</div>
+
+<main style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:96px 28px 120px;">
+
+  <section style="display:grid;grid-template-columns:1.35fr .9fr;gap:48px;align-items:start;margin-bottom:120px;animation:fadeUp .8s ease .1s both;">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.24em;color:#1fae44;margin-bottom:26px;flex-wrap:wrap;">
+        <span>FILE_REF: FRN-247-ALPHA</span>
+        <span style="color:#0f5220;">//</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;color:#35ff6a;"><span style="width:8px;height:8px;background:#35ff6a;border-radius:50%;animation:dotPulse 1.6s ease-in-out infinite;"></span>STATUS: ACTIVE_DEPLOYMENT</span>
+      </div>
+      <h1 style="font-size:clamp(38px,7vw,88px);font-weight:800;line-height:.94;letter-spacing:-.01em;color:#eafff0;margin-bottom:8px;animation:titleGlow 3.2s ease-in-out infinite,flicker 9s linear infinite;">FRANCISCO<br>AGUERO</h1>
+      <div style="font-size:clamp(14px,2vw,19px);letter-spacing:.16em;color:#35ff6a;margin:18px 0 30px;">SOFTWARE DEVELOPER<span style="color:#0f5220;"> // </span>FULL-STACK OPERATIVE<span style="display:inline-block;width:10px;height:18px;background:#35ff6a;vertical-align:-3px;margin-left:6px;animation:blink 1s step-end infinite;"></span></div>
+      <p style="max-width:560px;font-size:14.5px;line-height:1.85;color:#7fe89a;margin-bottom:34px;">Systems Engineering graduate deployed on full-stack objectives — architecting responsive React &amp; Next.js interfaces, hardening Node/Express &amp; REST backends, and shipping resilient product surfaces. Operating on a directive of precision, uptime, and relentless iteration.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:38px;">
+        <span style="border:1px solid rgba(53,255,106,.28);padding:7px 12px;font-size:11.5px;letter-spacing:.1em;color:#9dffb5;">LOC: WEST_VALLEY_CITY_UT</span>
+        <span style="border:1px solid rgba(53,255,106,.28);padding:7px 12px;font-size:11.5px;letter-spacing:.1em;color:#9dffb5;">REPOS: 27</span>
+        <span style="border:1px solid rgba(53,255,106,.28);padding:7px 12px;font-size:11.5px;letter-spacing:.1em;color:#9dffb5;">COMMITS/YR: 189</span>
+        <span style="border:1px solid rgba(53,255,106,.28);padding:7px 12px;font-size:11.5px;letter-spacing:.1em;color:#9dffb5;">EST: 2022</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+        <a href="#operations" style="display:inline-flex;align-items:center;gap:10px;background:#35ff6a;color:#020402;font-weight:700;font-size:13px;letter-spacing:.08em;padding:13px 22px;box-shadow:0 0 24px rgba(53,255,106,.35);" style-hover="background:#c9ffd6;box-shadow:0 0 34px rgba(53,255,106,.6);">VIEW_OPERATIONS <span>↓</span></a>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(53,255,106,.5);color:#35ff6a;font-size:13px;letter-spacing:.08em;padding:13px 22px;" style-hover="border-color:#35ff6a;background:rgba(53,255,106,.08);">ESTABLISH_CONTACT</a>
+      </div>
+    </div>
+
+    <div style="border:1px solid rgba(53,255,106,.4);background:rgba(4,10,6,.55);box-shadow:0 0 34px rgba(53,255,106,.1);">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;border-bottom:1px solid rgba(53,255,106,.25);font-size:10.5px;letter-spacing:.18em;color:#1fae44;">
+        <span>DOSSIER_PHOTO</span><span>FRN-247</span>
+      </div>
+      <div style="position:relative;height:300px;filter:grayscale(1) contrast(1.15) brightness(1.02);">
+        <image-slot id="dossier-photo" shape="rect" placeholder="DROP OPERATOR PHOTO" style="width:100%;height:100%;"></image-slot>
+        <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,rgba(3,10,5,.55));box-shadow:inset 0 0 60px rgba(53,255,106,.12);"></div>
+      </div>
+      <div style="padding:14px;font-size:11.5px;line-height:2;color:#7fe89a;">
+        <div style="display:flex;justify-content:space-between;"><span style="color:#1fae44;">DESIGNATION</span><span style="color:#cfffdb;">FULL-STACK DEV</span></div>
+        <div style="display:flex;justify-content:space-between;"><span style="color:#1fae44;">CORE</span><span style="color:#cfffdb;">REACT / NODE</span></div>
+        <div style="display:flex;justify-content:space-between;"><span style="color:#1fae44;">CLEARANCE</span><span style="color:#cfffdb;">ACTIVE</span></div>
+        <div style="display:flex;justify-content:space-between;"><span style="color:#1fae44;">DEGREE</span><span style="color:#cfffdb;">B.S. SYS ENG</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="operations" style="margin-bottom:120px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+      <h2 style="font-size:13px;letter-spacing:.28em;color:#35ff6a;">ACTIVE_OPERATIONS</h2>
+      <span style="font-size:11px;color:#1fae44;letter-spacing:.14em;">// SELECTED DEPLOYMENTS [06]</span>
+    </div>
+    <div style="height:2px;background:#35ff6a;transform-origin:left;animation:drawLine .9s ease .1s both;box-shadow:0 0 10px rgba(53,255,106,.5);margin-bottom:40px;"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;">
+      <sc-for list="{{ projects }}" as="op" hint-placeholder-count="6">
+        <a href="{{ op.url }}" target="_blank" style="display:block;border:1px solid rgba(53,255,106,.28);background:rgba(4,10,6,.5);padding:24px;position:relative;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease;" style-hover="border-color:#35ff6a;box-shadow:0 0 30px rgba(53,255,106,.2);transform:translateY(-3px);">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+            <span style="font-size:11px;color:#1fae44;letter-spacing:.16em;">[{{ op.n }}]</span>
+            <span style="font-size:10px;letter-spacing:.14em;color:#9dffb5;border:1px solid rgba(53,255,106,.3);padding:3px 8px;">{{ op.lang }}</span>
+          </div>
+          <div style="font-size:20px;font-weight:700;color:#eafff0;letter-spacing:.02em;margin-bottom:6px;">OP: {{ op.code }}</div>
+          <div style="font-size:11.5px;color:#1fae44;letter-spacing:.06em;margin-bottom:16px;word-break:break-word;">{{ op.repo }}</div>
+          <p style="font-size:13px;line-height:1.75;color:#7fe89a;min-height:66px;">{{ op.desc }}</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:16px;border-top:1px solid rgba(53,255,106,.18);font-size:11px;letter-spacing:.12em;">
+            <span style="color:#35ff6a;">STATUS: {{ op.status }}</span>
+            <span style="color:#cfffdb;">ACCESS →</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="margin-bottom:120px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+      <h2 style="font-size:13px;letter-spacing:.28em;color:#35ff6a;">TACTICAL_SKILL_MATRIX</h2>
+      <span style="font-size:11px;color:#1fae44;letter-spacing:.14em;">// CAPABILITY READOUT</span>
+    </div>
+    <div style="height:2px;background:#35ff6a;transform-origin:left;animation:drawLine .9s ease .1s both;box-shadow:0 0 10px rgba(53,255,106,.5);margin-bottom:40px;"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;">
+      <sc-for list="{{ skillGroups }}" as="grp" hint-placeholder-count="3">
+        <div style="border:1px solid rgba(53,255,106,.28);background:rgba(4,10,6,.5);padding:24px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;">
+            <span style="font-size:14px;font-weight:700;color:#35ff6a;letter-spacing:.1em;">{{ grp.name }}</span>
+            <span style="font-size:10px;letter-spacing:.16em;color:#020402;background:#35ff6a;padding:3px 8px;font-weight:700;">STABLE</span>
+          </div>
+          <sc-for list="{{ grp.items }}" as="sk" hint-placeholder-count="4">
+            <div style="margin-bottom:16px;">
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:#9dffb5;margin-bottom:6px;letter-spacing:.04em;"><span>{{ sk.label }}</span><span style="color:#1fae44;">{{ sk.pct }}</span></div>
+              <div style="height:6px;background:rgba(53,255,106,.12);overflow:hidden;">
+                <div style="height:100%;width:{{ sk.pct }};background:#35ff6a;box-shadow:0 0 8px rgba(53,255,106,.6);transform:scaleX(0);transform-origin:left;animation:fillBar 1.4s cubic-bezier(.2,.7,.2,1) .3s both;"></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="margin-bottom:120px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+      <h2 style="font-size:13px;letter-spacing:.28em;color:#35ff6a;">SERVICE_HISTORY</h2>
+      <span style="font-size:11px;color:#1fae44;letter-spacing:.14em;">// TRAINING &amp; DEPLOYMENT LOG</span>
+    </div>
+    <div style="height:2px;background:#35ff6a;transform-origin:left;animation:drawLine .9s ease .1s both;box-shadow:0 0 10px rgba(53,255,106,.5);margin-bottom:40px;"></div>
+    <div style="position:relative;padding-left:28px;border-left:1px solid rgba(53,255,106,.3);">
+      <sc-for list="{{ history }}" as="ev" hint-placeholder-count="4">
+        <div style="position:relative;margin-bottom:34px;">
+          <span style="position:absolute;left:-35px;top:4px;width:11px;height:11px;background:#35ff6a;border-radius:50%;box-shadow:0 0 10px #35ff6a;"></span>
+          <div style="font-size:11px;letter-spacing:.16em;color:#1fae44;margin-bottom:6px;">{{ ev.period }}</div>
+          <div style="font-size:16px;color:#eafff0;font-weight:700;margin-bottom:4px;">{{ ev.title }}</div>
+          <div style="font-size:12.5px;color:#7fe89a;">{{ ev.org }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="contact" style="display:grid;grid-template-columns:1.1fr .9fr;gap:56px;">
+    <div>
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <h2 style="font-size:13px;letter-spacing:.28em;color:#35ff6a;">CONTACT_PROTOCOLS</h2>
+      </div>
+      <div style="height:2px;background:#35ff6a;transform-origin:left;animation:drawLine .9s ease .1s both;box-shadow:0 0 10px rgba(53,255,106,.5);margin-bottom:32px;"></div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <sc-for list="{{ contacts }}" as="c" hint-placeholder-count="5">
+          <a href="{{ c.url }}" target="_blank" style="display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid rgba(53,255,106,.22);padding:15px 18px;transition:border-color .2s ease,background .2s ease;" style-hover="border-color:#35ff6a;background:rgba(53,255,106,.07);">
+            <span style="font-size:11px;letter-spacing:.16em;color:#1fae44;min-width:130px;">{{ c.label }}</span>
+            <span style="font-size:13px;color:#cfffdb;text-align:right;word-break:break-all;">{{ c.value }}</span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+    <div>
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <h2 style="font-size:13px;letter-spacing:.28em;color:#35ff6a;">CORE_DIRECTIVES</h2>
+      </div>
+      <div style="height:2px;background:#35ff6a;transform-origin:left;animation:drawLine .9s ease .1s both;box-shadow:0 0 10px rgba(53,255,106,.5);margin-bottom:32px;"></div>
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <sc-for list="{{ directives }}" as="d" hint-placeholder-count="4">
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <span style="color:#35ff6a;font-size:13px;margin-top:2px;">▸</span>
+            <div>
+              <div style="font-size:15px;color:#eafff0;font-weight:700;">{{ d.title }}</div>
+              <div style="font-size:12.5px;color:#7fe89a;line-height:1.7;margin-top:2px;">{{ d.desc }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer style="position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:rgba(3,8,5,.9);backdrop-filter:blur(4px);border-top:1px solid rgba(53,255,106,.3);padding:10px 22px;font-size:11px;letter-spacing:.1em;color:#35ff6a;">
+  <div style="display:flex;gap:22px;flex-wrap:wrap;">
+    <span>CORE: REACT_v18.0</span>
+    <span style="color:#1fae44;">LOGIC: TERMINATOR_PROTOCOL</span>
+    <span ref="{{ clockRef }}" style="color:#9dffb5;">--:--:-- UTC</span>
+  </div>
+  <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
+    <span style="display:inline-flex;align-items:center;gap:8px;color:#1fae44;">DATABASE:
+      <span style="display:inline-flex;gap:2px;">
+        <sc-for list="{{ bits }}" as="b" hint-placeholder-count="12">
+          <span style="width:5px;height:11px;background:#35ff6a;animation:bitFlicker 1.4s ease-in-out infinite;animation-delay:{{ b.d }};"></span>
+        </sc-for>
+      </span>
+    </span>
+    <span>STABLE</span>
+    <span style="color:#9dffb5;">SIGNAL: ONLINE</span>
+  </div>
+</footer>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  bootRef = React.createRef();
+  bootTextRef = React.createRef();
+  clockRef = React.createRef();
+
+  renderVals() {
+    return {
+      bootRef: this.bootRef,
+      bootTextRef: this.bootTextRef,
+      clockRef: this.clockRef,
+      projects: [
+        { n:'01', code:'SKIN-INTEL', repo:'FES-Skinstric-Internship', lang:'JavaScript', status:'DEPLOYED', desc:'AI-driven skincare analysis interface built during the Skinstric front-end internship — camera capture, demographic readout, responsive results UI.', url:'https://github.com/FranciscoAguero247/FES-Skinstric-Internship' },
+        { n:'02', code:'SUMMARIST', repo:'Frontend-Simplified — Advanced Virtual Internship v2', lang:'TypeScript', status:'DEPLOYED', desc:'Book-summary product front end delivered through the Frontend Simplified program: auth flows, plans, and a typed component system.', url:'https://github.com/FranciscoAguero247?tab=repositories' },
+        { n:'03', code:'KINO-MOTION', repo:'Movie-Motion-G-Project-React', lang:'JavaScript', status:'DEPLOYED', desc:'Motion-rich movie discovery interface powered by React and Framer Motion — animated transitions and dynamic content grids.', url:'https://github.com/FranciscoAguero247/Movie-Motion-G-Project-React' },
+        { n:'04', code:'SIGNAL-LOG', repo:'Blog-Web-Application', lang:'CSS', status:'STABLE', desc:'Full blog platform with authored posts, clean typographic reading layout, and responsive content management.', url:'https://github.com/FranciscoAguero247/Blog-Web-Application' },
+        { n:'05', code:'ATMOS-RECON', repo:'Weather-App', lang:'EJS', status:'STABLE', desc:'Live weather recon pulling real-time forecast data through an external API with server-rendered EJS views.', url:'https://github.com/FranciscoAguero247/Weather-App' },
+        { n:'06', code:'CULINARY-API', repo:'culinary-api', lang:'TypeScript', status:'ACTIVE', desc:'Typed REST service for recipe data — Node, Express, and PostgreSQL with clean route architecture.', url:'https://github.com/FranciscoAguero247?tab=repositories' },
+      ],
+      skillGroups: [
+        { name:'FRONTEND', items:[
+          { label:'React / Next.js', pct:'95%' },
+          { label:'JavaScript / TypeScript', pct:'90%' },
+          { label:'Tailwind / CSS3', pct:'92%' },
+          { label:'Framer Motion / Anim', pct:'82%' },
+        ]},
+        { name:'BACKEND', items:[
+          { label:'Node.js / Express', pct:'86%' },
+          { label:'PostgreSQL / SQL', pct:'78%' },
+          { label:'REST APIs', pct:'88%' },
+          { label:'Stripe / Payments', pct:'72%' },
+        ]},
+        { name:'OPERATIONS', items:[
+          { label:'Git / Version Control', pct:'90%' },
+          { label:'Vercel / Render', pct:'84%' },
+          { label:'CI/CD — GitHub Actions', pct:'76%' },
+          { label:'Figma / XD → Code', pct:'85%' },
+        ]},
+      ],
+      history: [
+        { period:'AUG 2016 — DEC 2021', title:'B.S. Systems Engineering', org:'Texas A&M International University' },
+        { period:'JUN 2022 — PRESENT', title:'Self-Directed Software Engineering', org:'Full-stack web development // React, Node, TypeScript' },
+        { period:'NOV 2023', title:'C++ Essential Training', org:'Certification — LinkedIn Learning' },
+        { period:'2024 — 2025', title:'Front-End Virtual Internships', org:'Skinstric (FES) · Frontend Simplified' },
+      ],
+      contacts: [
+        { label:'PORTFOLIO', value:'franciscojavieraguerojr.com', url:'https://franciscojavieraguerojr.com/' },
+        { label:'LINKEDIN', value:'/in/francisco-aguero', url:'https://www.linkedin.com/in/francisco-aguero' },
+        { label:'GITHUB', value:'/FranciscoAguero247', url:'https://github.com/FranciscoAguero247' },
+        { label:'SIGNAL_SECURE', value:'blast255@live.com', url:'mailto:blast255@live.com' },
+        { label:'DOSSIER', value:'DOWNLOAD_RESUME.PDF', url:'https://franciscojavieraguerojr.com/' },
+      ],
+      directives: [
+        { title:'Eliminate System Inefficiency', desc:'Ruthless attention to performance, clean architecture, and code that does exactly what it must.' },
+        { title:'Ensure UI Resilience', desc:'Responsive, accessible interfaces that hold under load and across every viewport.' },
+        { title:'Scale Architecture', desc:'Typed, modular systems built to grow — from API surface to component library.' },
+        { title:'Ship Relentlessly', desc:'100% attendance record energy: consistent output, iterated in the open on GitHub.' },
+      ],
+      bits: Array.from({length:12}, (_,i)=>({ d:(i*0.11).toFixed(2)+'s' })),
+    };
+  }
+
+  componentDidMount() {
+    this.runBoot();
+    this.startClock();
+    window.addEventListener('keydown', this.skip);
+    if (this.bootRef.current) this.bootRef.current.addEventListener('click', this.skip);
+    this.fallback = setTimeout(this.skip, 11000);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.skip);
+    clearInterval(this.clockTimer);
+    clearTimeout(this.fallback);
+  }
+
+  skip = () => {
+    const el = this.bootRef.current;
+    if (!el || el.dataset.done) return;
+    el.dataset.done = '1';
+    el.style.opacity = '0';
+    el.style.pointerEvents = 'none';
+    setTimeout(() => { if (el) el.style.display = 'none'; }, 650);
+  };
+
+  async runBoot() {
+    const lines = [
+      '> INITIALIZING TERMINATOR_PROTOCOL v2.4.7',
+      '> MOUNTING /dev/service_record ......... OK',
+      '> DECRYPTING OPERATOR MANIFEST ......... OK',
+      '> ID .......... FRANCISCO_A_247',
+      '> ROLE ........ SOFTWARE DEVELOPER / FULL-STACK',
+      '> LOADING ACTIVE_OPERATIONS [##########] 100%',
+      '> CLEARANCE ... GRANTED',
+      '',
+      '> ACCESS GRANTED. WELCOME, OPERATOR.',
+    ];
+    const el = this.bootTextRef.current;
+    if (!el) return;
+    const wait = (ms) => new Promise(r => setTimeout(r, ms));
+    for (const line of lines) {
+      for (let i = 0; i < line.length; i++) {
+        if (this.bootRef.current && this.bootRef.current.dataset.done) return;
+        el.textContent += line[i];
+        await wait(9);
+      }
+      el.textContent += '\n';
+      await wait(160);
+    }
+    await wait(650);
+    this.skip();
+  }
+
+  startClock() {
+    const tick = () => {
+      const el = this.clockRef.current;
+      if (!el) return;
+      const d = new Date();
+      const p = (n) => String(n).padStart(2, '0');
+      el.textContent = `${p(d.getUTCHours())}:${p(d.getUTCMinutes())}:${p(d.getUTCSeconds())} UTC`;
+    };
+    tick();
+    this.clockTimer = setInterval(tick, 1000);
+  }
+}
+</script>
+
+
+</body></html>
