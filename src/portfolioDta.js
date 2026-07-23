@@ -12,10 +12,36 @@ export const SYSTEM_CREDENTIALS = {
 };
 
 export const SKILL_MATRIX = [
-  { category: "Languages", items: ["JavaScript (ES6+)", "TypeScript", "C++", "HTML5/CSS3"] },
-  { category: "Frameworks & Libraries", items: ["React", "Node.js", "Express", "Tailwind CSS"] },
-  { category: "Databases & Architecture", items: ["RESTful APIs", "SQL", "Data Handling"] },
-  { category: "Methodologies", items: ["Defensive Programming", "System Orchestration", "Git/CI-CD"] }
+  {
+    category: "FRONTEND",
+    status: "STABLE",
+    items: [
+      { name: "React / Next.js", level: 95 },
+      { name: "JavaScript / TypeScript", level: 90 },
+      { name: "Tailwind / CSS3", level: 92 },
+      { name: "Framer Motion / Anim", level: 82 }
+    ]
+  },
+  {
+    category: "BACKEND",
+    status: "STABLE",
+    items: [
+      { name: "Node.js / Express", level: 86 },
+      { name: "PostgreSQL / SQL", level: 78 },
+      { name: "REST APIs", level: 88 },
+      { name: "Stripe / Payments", level: 72 }
+    ]
+  },
+  {
+    category: "OPERATIONS & ARCHITECTURE",
+    status: "STABLE",
+    items: [
+      { name: "Git / Version Control", level: 90 },
+      { name: "Defensive Programming", level: 95 },
+      { name: "Vercel / Render / CI-CD", level: 84 },
+      { name: "Data Handling & Systems", level: 88 }
+    ]
+  }
 ];
 
 export const SERVICE_RECORDS = [
