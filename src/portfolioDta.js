@@ -2,7 +2,7 @@ export const SYSTEM_CREDENTIALS = {
   name: "Francisco Agüero",
   title: "Systems Engineering Graduate",
   tagline: "Designing Full-Stack Software Systems with Precision Architecture",
-  bio: "I translate analytical systems engineering principles into responsive user interfaces and robust backend logic. Driven by defensive programming, an exceptional work ethic, and an ironclad 100% attendance record, I focus on building reliable system integrations.",
+  bio: "Systems Engineering graduate deployed on full-stack objectives — architecting responsive React & Next.js interfaces, hardening Node/Express & REST backends, and shipping resilient product surfaces. Operating on a directive of precision, uptime, and relentless iteration.",
   resumeUrl: "/Software Engineer Resume.docx",
   socials: {
     github: "https://github.com/FranciscoAguero247",
