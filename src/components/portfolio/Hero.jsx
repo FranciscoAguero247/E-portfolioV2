@@ -216,7 +216,7 @@ export default function Hero() {
         >
           <img
             alt="Operator Dossier"
-            src="/public/profile.jpg"
+            src="/profile.jpg"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
           <div
