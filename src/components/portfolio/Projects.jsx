@@ -1,5 +1,5 @@
 import React from 'react';
-import { SERVICE_RECORDS } from '../../portfolioDta';
+import { SERVICE_RECORDS } from '../../portfolioData';
 
 export default function Projects() {
   return (

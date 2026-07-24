@@ -1,5 +1,5 @@
 import React from 'react';
-import { SYSTEM_CREDENTIALS } from '../../portfolioDta';
+import { SYSTEM_CREDENTIALS } from '../../portfolioData';
 
 export default function Hero() {
   const {

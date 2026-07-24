@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { SYSTEM_CREDENTIALS } from '../../portfolioDta';
+import { SYSTEM_CREDENTIALS } from '../../portfolioData';
 
 const coreDirectives = [
   {

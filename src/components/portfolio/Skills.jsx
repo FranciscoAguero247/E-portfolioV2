@@ -1,5 +1,5 @@
 import React from 'react';
-import { SKILL_MATRIX } from '../../portfolioDta';
+import { SKILL_MATRIX } from '../../portfolioData';
 
 export default function Skills() {
   return (
