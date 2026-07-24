@@ -41,21 +41,31 @@ export default function Projects() {
             : op.title.replace('OP: ', '');
 
           return (
-            <a
-              key={op.id || idx}
-              href={targetUrl}
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                display: 'block',
-                border: '1px solid rgba(53, 255, 106, 0.28)',
-                background: 'rgba(4, 10, 6, 0.5)',
-                padding: 24,
-                position: 'relative',
-                textDecoration: 'none',
-                transition: 'border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease',
-              }}
-            >
+         <a
+            key={op.id || idx}
+            href={targetUrl}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display: 'block',
+              border: '1px solid rgba(53, 255, 106, 0.28)',
+              background: 'rgba(4, 10, 6, 0.5)',
+              padding: 24,
+              position: 'relative',
+              textDecoration: 'none',
+              transition: 'border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(53, 255, 106, 0.4)';
+              e.currentTarget.style.borderColor = 'rgba(53, 255, 106, 0.8)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = 'rgba(53, 255, 106, 0.28)';
+            }}
+          >
               <div
                 style={{
                   display: 'flex',
