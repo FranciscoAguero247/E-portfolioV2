@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const bootLines = [
+const BOOT_LINES = [
   '> INITIALIZING TERMINATOR_PROTOCOL v2.4.7',
   '> MOUNTING /dev/service_record ......... OK',
   '> DECRYPTING OPERATOR MANIFEST ......... OK',
@@ -15,8 +15,9 @@ const bootLines = [
 export default function BootLoader({ onComplete }) {
   const bootRef = useRef(null);
   const bootTextRef = useRef(null);
-  const fallbackRef = useRef(0);
-  const cleanupRef = useRef(0);
+  
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
 
   useEffect(() => {
     const root = document.body;
@@ -24,21 +25,31 @@ export default function BootLoader({ onComplete }) {
 
     const el = bootRef.current;
     const textEl = bootTextRef.current;
-    let skipped = false;
+    
+    let isCancelled = false;
+    let fallbackTimer = null;
+    let cleanupTimer = null;
+
+    if (textEl) {
+      textEl.textContent = '';
+    }
 
     const finish = () => {
-      if (skipped) return;
-      skipped = true;
+      if (isCancelled) return;
+      isCancelled = true;
+
       root.classList.remove('no-scroll');
+
       if (el) {
         el.dataset.done = '1';
       }
-      cleanupRef.current = window.setTimeout(() => {
+
+      cleanupTimer = window.setTimeout(() => {
         if (el) {
           el.style.display = 'none';
         }
-        if (typeof onComplete === 'function') {
-          onComplete();
+        if (typeof onCompleteRef.current === 'function') {
+          onCompleteRef.current();
         }
       }, 650);
     };
@@ -54,37 +65,37 @@ export default function BootLoader({ onComplete }) {
 
     const runBoot = async () => {
       if (!textEl) return;
-      for (const line of bootLines) {
+
+      for (const line of BOOT_LINES) {
         for (let i = 0; i < line.length; i += 1) {
-          if (skipped) return;
+          if (isCancelled) return;
           textEl.textContent += line[i];
-          // allow the browser to paint and avoid jank on slower devices
-          // eslint-disable-next-line no-await-in-loop
           await wait(9);
         }
+        if (isCancelled) return;
         textEl.textContent += '\n';
-        // eslint-disable-next-line no-await-in-loop
         await wait(160);
       }
-      // eslint-disable-next-line no-await-in-loop
+
       await wait(650);
       finish();
     };
 
-    // fallback if the bootscreen is not skipped after 11 seconds
-    fallbackRef.current = window.setTimeout(finish, 11000);
+    fallbackTimer = window.setTimeout(finish, 11000);
+
     void runBoot();
 
     return () => {
+      isCancelled = true;
       window.removeEventListener('keydown', handleSkip);
       if (el) {
         el.removeEventListener('click', handleSkip);
       }
-      window.clearTimeout(fallbackRef.current);
-      window.clearTimeout(cleanupRef.current);
+      window.clearTimeout(fallbackTimer);
+      window.clearTimeout(cleanupTimer);
       root.classList.remove('no-scroll');
     };
-  }, [onComplete]);
+  }, []);
 
   return (
     <div ref={bootRef} className="boot-overlay" role="status" aria-live="polite">
@@ -92,7 +103,9 @@ export default function BootLoader({ onComplete }) {
         <pre ref={bootTextRef} className="boot-text" />
         <span className="boot-cursor" aria-hidden="true" />
       </div>
-      <div className="boot-hint">PRESS ANY KEY TO SKIP // TERMINATOR_PROTOCOL v2.4.7</div>
+      <div className="boot-hint">
+        PRESS ANY KEY TO SKIP // TERMINATOR_PROTOCOL v2.4.7
+      </div>
     </div>
   );
 }
