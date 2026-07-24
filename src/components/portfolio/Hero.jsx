@@ -2,7 +2,6 @@ import React from 'react';
 import { SYSTEM_CREDENTIALS } from '../../portfolioDta';
 
 export default function Hero() {
-  // Safe extraction with fallbacks from portfolio data
   const {
     location = 'WEST_VALLEY_CITY_UT',
     reposCount = 27,
@@ -25,9 +24,7 @@ export default function Hero() {
         marginBottom: 120,
       }}
     >
-      {/* Left Column: dossier & bio */}
       <div>
-        {/* Header Badges */}
         <div
           style={{
             display: 'flex',
@@ -62,7 +59,6 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Hero Title */}
         <h1
           style={{
             fontSize: 'clamp(38px, 7vw, 88px)',
@@ -78,7 +74,6 @@ export default function Hero() {
           AGUERO
         </h1>
 
-        {/* Subtitle / Role */}
         <div
           style={{
             fontSize: 'clamp(14px, 2vw, 19px)',
@@ -92,7 +87,6 @@ export default function Hero() {
           FULL-STACK OPERATIVE
         </div>
 
-        {/* Bio Text */}
         <p
           style={{
             maxWidth: 560,
@@ -105,7 +99,6 @@ export default function Hero() {
           {bio}
         </p>
 
-        {/* Telemetry Chips */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 38 }}>
           <span
             style={{
@@ -153,7 +146,6 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Call-To-Action Buttons */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
           <a
             href="#operations"
@@ -192,7 +184,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right Column: Tactical Dossier Card */}
       <div
         style={{
           border: '1px solid rgba(53, 255, 106, 0.4)',
@@ -200,7 +191,6 @@ export default function Hero() {
           boxShadow: '0 0 34px rgba(53, 255, 106, 0.1)',
         }}
       >
-        {/* Card Titlebar */}
         <div
           style={{
             display: 'flex',
@@ -217,7 +207,6 @@ export default function Hero() {
           <span>FRN-247</span>
         </div>
 
-        {/* Photo Slot */}
         <div
           style={{
             position: 'relative',
@@ -227,7 +216,7 @@ export default function Hero() {
         >
           <img
             alt="Operator Dossier"
-            src="/logs/Screenshot from 2026-06-20 17-29-00.png"
+            src="/public/profile.jpg"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
           <div
@@ -241,7 +230,6 @@ export default function Hero() {
           />
         </div>
 
-        {/* Operator Specs Grid */}
         <div style={{ padding: 14, fontSize: 11.5, lineHeight: 2, color: '#7fe89a' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <span style={{ color: '#1fae44' }}>DESIGNATION</span>
