@@ -1,36 +1,78 @@
-# 🛡️ TERMINATOR_PROTOCOL | MISSION_CONTROL
+# E-Portfolio V2
 
-**OPERATOR:** FRANCISCO_A_247  
-**STATUS:** ACTIVE_DEPLOYMENT  
-**CORE:** REACT + TAILWIND + FRAMER MOTION  
+A React and Vite portfolio website for Francisco Aguero. The app presents a modern one-page experience with sections for the hero area, skills, projects, experience, contact, and footer.
 
----
+## Project structure
 
-## 🛰️ ARCHITECTURAL PHILOSOPHY
-This project is built on the **Siege Engine** logic—a methodology that prioritizes **Precision vs. Chaos**. By decoupling the UI into high-voltage components, the system achieves maximum stability and scalability.
+```text
+src/
+  App.jsx
+  App.test.js
+  index.css
+  index.jsx
+  portfolioData.js
+  serviceWorker.js
+  setupTests.js
+  components/
+    portfolio/
+      BootLoader.jsx
+      Contact.jsx
+      Experience.jsx
+      Footer.jsx
+      Header.jsx
+      Hero.jsx
+      Projects.jsx
+      Skills.jsx
+  pages/
+    FranciscoPortfolio.jsx
+    PortfolioPage.jsx
 
-### 🛡️ Guardian Protocols
-* **Modular Architecture:** State logic is isolated from the UI to prevent data leakage and "Logic Chaos."
-* **Tactical UI:** Utilizing `Framer Motion` for high-intensity visual feedback that remains lightweight and responsive.
-* **The Social API:** Designed specifically to provide a "Partner-Ready" interface—stable, reliable, and precise.
+public/
+  CNAME
+  Francisco-Aguero-Portfolio.html
+  favicon.png
+  manifest.json
+  profile.jpg
+  robots.txt
+```
 
----
+## Tech stack
 
-## 🗂️ MISSION LOGS (TACTICAL RECON)
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- EmailJS
+- Testing Library
 
-| OPERATION | OBJECTIVE | TECH STACK |
-| :--- | :--- | :--- |
-| **METRO-INTEL** | Real-time meteorological surveillance. | React, Weather API |
-| **VISUAL-RECON** | Cinematic data retrieval and motion UI. | React, TMDB API |
-| **ARCHIVE-CORE** | Relational database management. | PostgreSQL, Node.js |
-| **COMMS-RELAY** | Full-stack information dissemination. | Express, React |
+## Getting started
 
----
+Install dependencies:
 
-## ⚡ TACTICAL SKILL MATRIX
-```json
-{
-  "frontend": ["React", "Tailwind CSS", "Framer Motion", "EJS"],
-  "backend": ["Node.js", "Express", "PostgreSQL", "SQL"],
-  "operations": ["Git", "Vercel", "Render", "API Integration"]
-}
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Notes
+
+- The app uses a custom domain configured in the public CNAME file.
+- Static assets and metadata live in the public directory.
+- Portfolio content is centralized in src/portfolioData.js.
