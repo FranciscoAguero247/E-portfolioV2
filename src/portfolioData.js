@@ -39,8 +39,8 @@ export const SKILL_MATRIX = [
       { name: "Git / Version Control", level: 90 },
       { name: "Defensive Programming", level: 95 },
       { name: "Vercel / Render / CI-CD", level: 84 },
-      { name: "Data Handling & Systems", level: 88 }
-      { name: "Testing & Automation: Jest, React Testing Library"}
+      { name: "Data Handling & Systems", level: 88 },
+      { name: "Testing & Automation: Jest, React Testing Library", level: 80 }
     ]
   }
 ];

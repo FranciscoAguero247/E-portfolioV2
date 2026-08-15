@@ -4,8 +4,8 @@ import { SYSTEM_CREDENTIALS } from '../../portfolioData';
 export default function Hero() {
   const {
     location = 'WEST_VALLEY_CITY_UT',
-    reposCount = 27,
-    commitsPerYear = 189,
+    reposCount = 28,
+    commitsPerYear = 268,
     established = '2022',
     designation = 'FULL-STACK DEV',
     coreTech = 'REACT / NODE',
