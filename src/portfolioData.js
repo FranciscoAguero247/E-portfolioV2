@@ -40,6 +40,7 @@ export const SKILL_MATRIX = [
       { name: "Defensive Programming", level: 95 },
       { name: "Vercel / Render / CI-CD", level: 84 },
       { name: "Data Handling & Systems", level: 88 }
+      { name: "Testing & Automation: Jest, React Testing Library"}
     ]
   }
 ];
@@ -57,92 +58,93 @@ export const SERVICE_RECORDS = [
   },
   {
     id: "02",
+    title: "OP: Inventory System Analyzer",
+    alias: "dockcheck",
+    description: "This real-time yard management and check-in system provides live visibility of incoming trailers, tracks shift performance, and instantly catches inventory discrepancies at the gate to prevent future errors.",
+    tags: ["Next.js", "Reacy", "TypeScrit", "Tailwind CSS", "Supabase", "Recharts", "Jest and Testing Library"],
+    liveUrl: "https://dockcheck-seven.vercel.app/", 
+    githubUrl: "https://github.com/FranciscoAguero247/dockcheck",
+  },
+  {
+    id: "03",
     title: "OP: VISUAL-RECON",
     alias: "Movie Motion G-Project",
     description: "A highly interactive media tracking and cinematic data retrieval application leveraging React context states, modern layouts, and fluid transitions.",
     tags: ["React", "JavaScript", "Tailwind CSS", "API Integration"],
     liveUrl: "https://movie-motion-g-project-react.vercel.app/",
     githubUrl: "https://github.com/FranciscoAguero247/Movie-Motion-G-Project-React",
-    img: "/logs/movie-motion-G-preview.png"
   },
   {
-    id: "03",
+    id: "04",
     title: "OP: METRO-INTEL",
     alias: "Weather App",
     description: "Real-time meteorological surveillance and weather telemetry interface.",
     tags: ["JavaScript", "API Integration", "CSS3", "Data Handling"],
     liveUrl: "https://api-site-zcwc.onrender.com/",
     githubUrl: "https://github.com/FranciscoAguero247/Weather-App",
-    img: "/logs/weather-preview.png"
   },
   {
-    id: "04",
+    id: "05",
     title: "OP: ARCHIVE-CORE",
     alias: "Book Note Collection",
     description: "Relational database management system designed for indexing, referencing, and recording book annotations.",
     tags: ["SQL", "Node.js", "Express", "Data Handling"],
     liveUrl: "https://book-note-record.onrender.com/",
     githubUrl: "https://github.com/FranciscoAguero247/Book-note-record",
-    img: "/logs/book-note-preview.png"
   },
   {
-    id: "05",
+    id: "06",
     title: "OP: COMMS-RELAY",
     alias: "Blog Web Application",
     description: "Full-stack information dissemination hub and publishing engine built with clean MVC routing architecture.",
     tags: ["Node.js", "Express", "HTML5/CSS3", "JavaScript"],
     liveUrl: "https://blog-web-application-delta.vercel.app/",
     githubUrl: "https://github.com/FranciscoAguero247/Blog-Web-Application",
-    img: "/logs/blog-preview.png"
+    
   },
   {
-    id: "06", 
+    id: "07", 
     title: "OP: ULTRAVERSE-RECON",
     alias: "NFT Marketplace",
     description: "An advanced, dynamic NFT Marketplace web application developed during the Frontend Simplified Advanced Virtual Internship. Engineered with complex React state management, dynamic loading skeletons, interactive countdown timers, and responsive CSS architectures.",
     tags: ["React", "JavaScript", "Axios API", "CSS/Styled Components"], 
     liveUrl: "https://francisco-internship-maug.vercel.app/",
     githubUrl: "https://github.com/FranciscoAguero247/Francisco-Internship",
-    img: "/logs/ultraverse-preview.png" 
   },
   {
-    id: "07", 
+    id: "08", 
     title: "OP: SKINSTRIC-AI",
     alias: "SKINSTRIC AI",
     description: "An AI-driven skincare diagnostic application built during a partner-company simulation. Features real-time camera capture streams via device APIs, image analysis algorithms, dynamic questionnaire logic, and fluid component transitions.",
     tags: ["React", "JavaScript", "Webcam API", "CSS Modules"], 
     liveUrl: " https://fes-skinstric-internship.vercel.app/",
     githubUrl: "https://github.com/FranciscoAguero247/FES-Skinstric-Internship",
-    img: "/logs/skinstric-preview.png"
   },
   {
-    id: "08", 
+    id: "09", 
     title: "OP: SUMMARIST-CORE",
     alias: "Summarist",
     description: "A subscription-based micro-learning book summary platform that delivers concise, high-impact key insights and audio breakdowns. Built with strict defensive UI architectures, an isolated authentication modal stacking system, and real-time document delivery.",
     tags: ["Next.js", "React", "Firebase Auth", "Firestore NoSQL", "Vanilla CSS3"], 
     liveUrl: "https://frontend-simplified-advance-virtual.vercel.app/", 
     githubUrl: "https://github.com/FranciscoAguero247/Frontend-Simplified---Advance-Virtual-Internship-v2-",
-    img: "/logs/summarist-preview.png"
   },
   {
-    id: "09", 
+    id: "10", 
     title: "OP: CORE-FOUNDATION",
     alias: "Treact site",
     description: "A pixel-perfect, fully responsive multi-page web platform designed as the Frontend Simplified Foundation Capstone. Engineered using semantic HTML5, advanced CSS3 layout engines, and vanilla JavaScript to handle dynamic state rendering, product filtering, and fluid viewport scaling.",
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"], 
     liveUrl: "https://franciscoaguero247.github.io/FES-Final-Project/", 
     githubUrl: "https://github.com/FranciscoAguero247/FES-Final-Project",
-    img: "/logs/foundation-preview.png" 
   },
   {
-    id: "10", 
+    id: "11", 
     title: "OP: Recipe Telemetry ",
     alias: "Culinary API",
     description: "A full-stack culinary database and recipe management application. Engineered with a robust RESTful API backend to handle structured ingredient schemas, CRUD operations, and a highly responsive user interface for interactive recipe curation.",
     tags: ["React", "Node.js", "Express", "RESTful APIs", "Data Handling"], 
     liveUrl: "https://culinary-api-frontend.onrender.com/", 
     githubUrl: "https://github.com/FranciscoAguero247/culinary-api",
-    img: "/logs/culinary-preview.png" 
   }
 ];

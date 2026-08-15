@@ -1,42 +1,16 @@
-# E-Portfolio V2
+# Francisco Agüero Portfolio
 
-A React and Vite portfolio website for Francisco Aguero. The app presents a modern one-page experience with sections for the hero area, skills, projects, experience, contact, and footer.
+A polished personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion. The project highlights Francisco Agüero’s background, technical capabilities, featured work, and contact details in a modern, responsive experience.
 
-## Project structure
+## Features
 
-```text
-src/
-  App.jsx
-  App.test.js
-  index.css
-  index.jsx
-  portfolioData.js
-  serviceWorker.js
-  setupTests.js
-  components/
-    portfolio/
-      BootLoader.jsx
-      Contact.jsx
-      Experience.jsx
-      Footer.jsx
-      Header.jsx
-      Hero.jsx
-      Projects.jsx
-      Skills.jsx
-  pages/
-    FranciscoPortfolio.jsx
-    PortfolioPage.jsx
+- Responsive one-page portfolio experience
+- Animated transitions and motion-enhanced UI sections
+- Dedicated sections for skills, projects, experience, and contact
+- Contact form integration via EmailJS
+- Content-driven structure for easy updates and maintenance
 
-public/
-  CNAME
-  Francisco-Aguero-Portfolio.html
-  favicon.png
-  manifest.json
-  profile.jpg
-  robots.txt
-```
-
-## Tech stack
+## Tech Stack
 
 - React 19
 - Vite
@@ -45,34 +19,62 @@ public/
 - EmailJS
 - Testing Library
 
-## Getting started
+## Project Structure
 
-Install dependencies:
+- [src/App.jsx](src/App.jsx) — application entry point
+- [src/portfolioData.js](src/portfolioData.js) — portfolio content, profile details, and project data
+- [src/components/portfolio](src/components/portfolio) — reusable UI sections such as Hero, Skills, Projects, Contact, and Footer
+- [src/pages](src/pages) — page-level components
+- [public](public) — static assets, manifest data, and downloadable files
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### Development
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+The local development server will start and provide a Vite URL in the terminal.
+
+### Production Build
 
 ```bash
 npm run build
 ```
 
-Preview the production build:
+### Preview Build Locally
 
 ```bash
 npm run preview
 ```
 
-## Notes
+## Content Management
 
-- The app uses a custom domain configured in the public CNAME file.
-- Static assets and metadata live in the public directory.
-- Portfolio content is centralized in src/portfolioData.js.
+Most site content is centralized in [src/portfolioData.js](src/portfolioData.js), making it straightforward to update:
+
+- biography and title
+- social links
+- skill categories and proficiency
+- project descriptions and URLs
+
+## Deployment
+
+This project is configured for deployment through a Vite-based hosting workflow and is associated with:
+
+https://franciscojavieraguerojr.com
+
+## License
+
+This repository is intended for personal portfolio use.
